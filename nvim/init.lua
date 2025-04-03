@@ -32,14 +32,3 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 require("config.lazy")
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities.textDocument.completion.completionItem.snippetSupport = true
-
-require("lspconfig").cssls.setup({
-	capabilities = capabilities,
-})
--- require("lspconfig").ts_ls.setup({})
-require("lspconfig").emmet_ls.setup({})
-require("lspconfig").jsonls.setup({})
-require("lspconfig").pyright.setup({})
-require("lspconfig").eslint.setup({})
-require("lspconfig").html.setup({})
-require("lspconfig").rust_analyzer.setup({})
