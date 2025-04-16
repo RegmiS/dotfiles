@@ -5,7 +5,7 @@ vim.opt.inccommand = "split"
 
 vim.opt.autoindent = true
 vim.opt.cursorline = true
-vim.opt.expandtab = true
+vim.opt.expandtab = true -- use spaces instead of tab
 
 vim.opt.scrolloff = 10
 vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")

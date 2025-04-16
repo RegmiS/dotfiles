@@ -10,7 +10,15 @@ return {
 		dependencies = { "williamboman/mason.nvim", "neovim/nvim-lspconfig" },
 		config = function()
 			require("mason-lspconfig").setup({
-				ensure_installed = { "rust_analyzer", "ts_ls", "pyright", "lua_ls" },
+				ensure_installed = {
+					"rust_analyzer",
+					"ts_ls",
+					"pyright",
+					"lua_ls",
+					"html",
+					"cssls",
+					"emmet_ls",
+				},
 				automatic_installation = true,
 			})
 			local lspconfig = require("lspconfig")
@@ -28,10 +36,10 @@ return {
 		config = function()
 			require("mason-tool-installer").setup({
 				ensure_installed = {
-					"prettier",
-					"stylua",
-					"eslint_d",
-					"clangd",
+					-- "prettier",
+					-- "stylua",
+					-- "eslint_d",
+					-- "clangd",
 				},
 				auto_update = true, -- Automatically update tools
 				run_on_start = true, -- Install missing tools when Neovim starts
@@ -40,10 +48,10 @@ return {
 	},
 
 	-- Install nvim-lspconfig (LSP client for Neovim)
-  {
-    "neovim/nvim-lspconfig",
-    config = function()
-      -- Additional LSP configurations if needed
-    end,
-  },
+	{
+		"neovim/nvim-lspconfig",
+		config = function()
+			-- Additional LSP configurations if needed
+		end,
+	},
 }
