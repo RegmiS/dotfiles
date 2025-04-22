@@ -19,7 +19,12 @@ vim.opt.updatetime = 250
 vim.opt.shiftwidth = 2
 vim.opt.tabstop = 2
 
+vim.opt.foldmethod = "syntax"
+vim.opt.foldlevel = 99
+vim.opt.foldenable = true
+
 vim.keymap.set("t", "<Esc><Esc>", "<C-\\><C-n>", { desc = "Exit terminal mode" })
+vim.keymap.set("v", "<leader>y", '"+y', { desc = "Copy to system clipboard" })
 
 vim.api.nvim_create_autocmd("TextYankPost", {
 	desc = "Highlight when yanking (copying) text",

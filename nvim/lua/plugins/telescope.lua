@@ -39,6 +39,24 @@ return {
 						require("telescope.themes").get_dropdown(),
 					},
 				},
+				-- defaults = {
+				-- 	file_ignore_patterns = { "node_modules", ".git/" },
+				-- },
+				-- pickers = {
+				-- 	find_files = {
+				-- 		find_command = {
+				-- 			"fd",
+				-- 			"--type",
+				-- 			"f",
+				-- 			"--strip-cwd-prefix",
+				-- 			"--hidden",
+				-- 			"--exclude",
+				-- 			".git",
+				-- 			"--exclude",
+				-- 			"node_modules",
+				-- 		},
+				-- 	},
+				-- },
 			})
 			pcall(require("telescope").load_extension, "fzf")
 			pcall(require("telescope").load_extension, "ui-select")
