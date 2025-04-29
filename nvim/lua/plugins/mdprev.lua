@@ -1,5 +1,5 @@
-return {
-	"lukas-reineke/headlines.nvim",
-	dependencies = "nvim-treesitter/nvim-treesitter",
-	config = true,
-}
+-- return {
+-- 	"lukas-reineke/headlines.nvim",
+-- 	dependencies = "nvim-treesitter/nvim-treesitter",
+-- 	config = true,
+-- }
