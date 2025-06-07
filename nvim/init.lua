@@ -26,6 +26,8 @@ vim.opt.foldenable = true
 vim.keymap.set("t", "<Esc><Esc>", "<C-\\><C-n>", { desc = "Exit terminal mode" })
 vim.keymap.set("v", "<leader>y", '"+y', { desc = "Copy to system clipboard" })
 
+vim.keymap.set("n", "<leader>fd", vim.diagnostic.open_float, { desc = "Show diagnostic popup" })
+
 vim.api.nvim_create_autocmd("TextYankPost", {
 	desc = "Highlight when yanking (copying) text",
 	group = vim.api.nvim_create_augroup("kickstart-highlight-yank", { clear = true }),
